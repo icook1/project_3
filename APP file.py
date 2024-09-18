@@ -4,11 +4,22 @@ import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
 import us
-
+import os
 app = Flask(__name__)
 
+
+
+# Get the directory where APP.py is located
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the CSV file
+csv_path = os.path.join(current_dir, 'US chronic Asthma.csv')
+
 # Load the asthma dataset
-asthma_data = pd.read_csv(r"C:\Users\parme\OneDrive\Desktop\project_3\US chronic Asthma.csv")
+asthma_data = pd.read_csv(csv_path)
+
+# Load the asthma dataset
+#asthma_data = pd.read_csv(r'US chronic Asthma.csv')
 
 # Filter for 2021 data
 data_2021 = asthma_data[asthma_data['YearStart'] == 2021]
