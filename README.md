@@ -39,3 +39,7 @@ Analysis summary:
 Limitations:
     
     Due to the enormous size of the dataset, we limited the project to researching the two vaccination rates and general asthma prevalence in the year 2021.
+
+Ethical Considerations:
+ 
+    Throughout the project, ethical considerations will be considered, particularly concerning data privacy and representation. All personal data will be anonymized, and the visualizations will aim to present data accurately without misleading interpretations. 
